@@ -1,6 +1,6 @@
 <h1>Category Create Form</h1>
 <div class="div">
-    <form action="<?php echo base_url('categories/store'); ?>" method="post">
+    <form action="<?php echo base_url('categories/store'); ?>" method="post" enctype="multipart/form-data">
         <div>
             <label for="cat_name">Category name: </label>
             <input type="text" name="cat_name" id="cat_name" value = "<?php echo set_value('cat_name'); ?>">
@@ -8,8 +8,8 @@
         </div>
         <div>
             <label for="cat_image">Category image: </label>
-            <input type="text" name="cat_image" id="cat_image">
-            <?php echo form_error('cat_image')? "<small style='color:red'>".form_error('cat_image')."</small>" : ""; ?>
+            <input type="file" name="cat_image" id="cat_image">
+            
         </div>
         <div>
             <label for="cat_publish">Category publish: </label>
