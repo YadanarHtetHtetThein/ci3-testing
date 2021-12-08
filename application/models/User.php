@@ -75,5 +75,10 @@ class User extends CI_Model{
         $this->session->unset_userdata('user_role');
         $this->session->unset_userdata('isUserLoggedIn');
     }
+
+    public function get_one($id){
+        $query = $this->db->get_where($this->table_name,[$this->primary_key=>$id]);
+        return $query->row();
+    }
 }
 ?>

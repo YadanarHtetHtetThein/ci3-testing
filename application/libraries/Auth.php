@@ -33,4 +33,38 @@ class Auth{
         }
     }
 
+    // //determined if logged in
+    // function is_logged_in(){
+    //     return $this->CI->session->userdata('user_id') != false;
+    // }
+
+    // /**
+    //  * validate the user and requested action
+    //  * @return [type][description]
+    //  */
+    // function validate($module_name = false){
+    //     if(!$this->is_logged_in()){
+    //         //if there is no logged in user, return false
+    //         return false;
+    //     }
+
+    //     // if($module_name && $this->has_permission($module_name)){
+    //     //     //if no permission for requested module , return false
+    //     //     return false;
+    //     // }
+    //     return true;
+    // }
+
+    // function has_permission(){}
+
+    // function is_system_user(){}
+
+    // function get_user_info(){
+    //     if($this->is_logged_in()){
+    //         //if there is logged in user
+    //         return $this->CI->User->get_one($this->CI->session->userdata('user_id'));
+    //     }
+    //     return false;
+    // }
+
 }
